@@ -1,4 +1,32 @@
-<div style="background:#2a2a2a;padding:15px;border-left:6px solid #ff3b3b;border-radius:8px;color:white;font-family:Arial;margin-bottom:20px;">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Clases de Apex Legends</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #1d1d1d;
+            color: white;
+            margin: 20px;
+        }
+        .clase {
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .clase h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1 style="text-align:center; color:#ff4655;">Clases de Apex Legends</h1>
+
+<!-- Clase Asalto -->
+<div class="clase" style="border-left:6px solid #ff3b3b;">
     <h2 style="color:#ff3b3b;">Clase Asalto</h2>
     <p>
         Los personajes de la clase Asalto están diseñados para dominar el combate directo y presionar al enemigo. 
