@@ -17,6 +17,15 @@ body {
   margin: 40px auto;
   color:white;
   text-shadow: 0 0 6px black;
+.card {
+  background: rgba(0, 0, 0, 0.6);  
+  padding: 20px;
+  border-radius: 10px;            
+  max-width: 600px;
+  margin: 30px auto;              
+  color: white;
+  text-shadow: 0 0 5px black;
+}
 }
 h1 {
   font-size: 50px;
