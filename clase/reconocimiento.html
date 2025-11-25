@@ -3,6 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <title>Clase: Reconocimiento</title>
+<style>
+    body {
+      background: url("../imagenes/clases.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 40px;
+    }
+    h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 26px;
+      margin-bottom: 40px;
+    }
+    ul.clases {
+      list-style: none;
+      padding: 0;
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+      gap: 20px;
+    }
+    ul.clases li a {
+      display: block;
+      padding: 15px 30px;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 15px;
+      color: white;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: bold;
+      width: 250px;
+      text-align: center;
+      transition: 0.2s;
+    }
+    ul.clases li a:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: scale(1.03);
+    }
+    .volver {
+      margin-top: 50px;
+      display: inline-block;
+      padding: 15px 25px;
+      background: white;
+      color: black;
+      border-radius: 12px;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: default;
+    }
+    </style>
+  
   <style>
     body {
       background-color: #3b0066; 
@@ -18,7 +78,7 @@
     <h1>Clase reconocimiento</h1>
     <p>Selecciona una leyenda:</p>
 
-    <ul>
+    <ul class="clases">
       <li><a href="../leyendas/bloodhound.html">Bloodhound</a></li>
       <li><a href="../leyendas/crypto.html">Crypto</a></li>
       <li><a href="../leyendas/valkyrie.html">Valkyrie</a></li>
