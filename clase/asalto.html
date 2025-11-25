@@ -5,20 +5,42 @@
    <title>Clase: Asalto </title>
    <style>
     body {
-      background-color: #8b0000; 
-      color: white;
-      font-family: Arial, sans-serif;
-    }
-    a {
-      color: #ffeaea;
-    }
+      ul.clases {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    gap: 20px;
+  }
+
+  ul.clases li a {
+    display: block;
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    width: 250px;              
+    text-align: center;
+    transition: 0.2s;
+  }
+
+  ul.clases li a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.03);
+  }
+      
   </style>
 </Head>
 <Body> 
      <h1>Clase Asalto</h1>
     <p>Selecciona una leyenda:</p>
 
-     <ul>
+     <ul class="clase">
      <li><a href = "../leyendas/bangalore.html">Bangalore</a></li>
      <li><a href = "../leyendas/revenant.html">Revenant</a></li>
      <li><a href = "../leyendas/fuse.html">Fuse</a></li>
