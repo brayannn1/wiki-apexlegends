@@ -4,10 +4,8 @@ body {
   background-size: cover;
   background-position: center;
   min-height: 100vh;
-  color: rgb(253, 253, 253);
+  color: rgb(0, 0, 0);
   font-family: Arial, sans-serif;
-  text-shadow: 0 0 8px black;
-  
 }
 .box {
     background: rgba(212, 175, 9, 0.85); 
