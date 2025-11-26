@@ -1,1 +1,88 @@
+body {
+  margin: 0;
+  padding: 40px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+}
 
+.header-box {
+  background: rgba(0, 0, 0, 0.65);
+  padding: 25px 40px;
+  border-radius: 15px;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.header-box h1 {
+  font-size: 60px; 
+  margin: 0;
+  font-weight: bold;
+}
+
+.header-box p {
+  font-size: 30px; 
+  margin: 10px 0 0 0;
+}
+
+ul.clases {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+ul.clases li a {
+  display: block;
+  padding: 15px 30px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: bold;
+  width: 280px;
+  text-align: center;
+  transition: 0.2s;
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+}
+ul.clases li a:hover {
+  transform: scale(1.04);
+}
+
+.volver {
+  margin-top: 50px;
+  display: inline-block;
+  padding: 15px 25px;
+  background: white;
+  color: black;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.asalto a:hover {
+  background: rgba(255, 0, 0, 0.5);
+}
+
+.apoyo a:hover {
+  background: rgba(0, 153, 255, 0.5);
+}
+
+.escaramuza a:hover {
+  background: rgba(255, 0, 255, 0.5);
+}
+
+.control a:hover {
+  background: rgba(0, 255, 0, 0.5);
+}
+
+.reconocimiento a:hover {
+  background: rgba(235, 235, 19, 0.5);
+}
