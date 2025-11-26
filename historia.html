@@ -8,7 +8,7 @@
     body {
       margin: 0;
       padding: 40px;
-      background-image: url("img/fondo2.jpg");
+      background-image: url("img/historia.jpg");
       background-size: cover;
       background-position: center;
       color: white;
@@ -21,17 +21,27 @@
     }
 
     .contenedor {
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(0, 0, 0, 0.8);
       padding: 20px 30px;
       border-radius: 15px;
       max-width: 900px;
     }
 
-    a {
-      color: #ffcc66;
-      font-weight: bold;
-      text-decoration: none;
-    }
+    .volver {
+    display: block;
+    width: fit-content;
+    margin: 40px auto 0 auto;
+    padding: 12px 22px;
+    background-color: #ffffff;
+    color: #000;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.volver:hover {
+    background-color: #cfcfcf;
+}
   </style>
 </head>
 
@@ -82,7 +92,9 @@
       para sobrevivir y ganar los Juegos Apex.
     </p>
 
-    <p><a href="index.html">← Volver al inicio</a></p>
+    <p>
+      <a href="../index.html" class="volver">Volver al inicio</a>
+
   </div>
 
 </body>
