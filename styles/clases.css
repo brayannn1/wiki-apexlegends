@@ -76,7 +76,7 @@ ul.clases li a:hover {
 }
 
 .escaramuza a:hover {
-  background: rgba(255, 0, 255, 0.5);
+  background: rgba(208, 211, 16, 0.5);
 }
 
 .control a:hover {
@@ -84,5 +84,5 @@ ul.clases li a:hover {
 }
 
 .reconocimiento a:hover {
-  background: rgba(235, 235, 19, 0.5);
+  background: rgba(204, 20, 221, 0.5);
 }
