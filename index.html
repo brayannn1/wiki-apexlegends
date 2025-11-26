@@ -6,152 +6,57 @@
 <style>
   body {
     margin: 0;
-    padding: 0;
-    background-image: url("img/fondo2.jpg");
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
+    padding: 40px;
     font-family: Arial, sans-serif;
-    color: white;
-    text-shadow: 0 0 6px black;
+    background-color: #f5f5f5;
+    color: #000;
   }
-
-  h1, h2 {
+   h1 {
     text-align: center;
-    margin-top: 20px;
-  }
-  .container {
-    width: 90%;
-    max-width: 1300px;
-    margin: 40px auto;
-    display: grid;
-    grid-template-columns: 1fr 350px;
-    gap: 40px;
-  }
-   .roles {
+    margin-bottom: 40px;
+    font-weight: bold;
+   }
+   .contenedor {
+    max-width: 900px;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-  }
-   .role-box {
-    background: rgba(0,0,0,0.6);
-    padding: 22px;
-    border-radius: 15px;
-    backdrop-filter: blur(3px);
-  }
-  
-  .role-title {
-    font-size: 24px;
-    margin-bottom: 14px;
-    font-weight: bold;
-  }
-  .btn {
-    display: block;
-    width: 100%;
-    margin: 8px 0;
-    padding: 12px;
-    border: none;
-    border-radius: 10px;
-    font-size: 17px;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-    transition: 0.2s;
-  }
-   .btn-class {
-    background: #d9534f;
-  }
-  .btn-class:hover {
-    background: #b0413f;
-  }
-
-  .btn-desc {
-    background: #4287f5;
-  }
-  .btn-desc:hover {
-    background: #2f64b8;
-  }
-
-  .right-box {
-    background: rgba(0,0,0,0.6);
+    gap: 25px;
+   }
+   .cuadro {
+    background: #fff;
     padding: 25px;
-    border-radius: 15px;
-    backdrop-filter: blur(2px);
-  }
-  .right-title {
-    font-size: 26px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  .historia-btn {
-    display: block;
-    margin-top: 30px;
-    padding: 14px;
-    width: 100%;
-    background: white;
-    color: black;
     border-radius: 12px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 18px;
+    border: 1px solid #ddd;
+   }
+   .cuadro h2 {
+    margin-top: 0;
+   }
+   a {
     text-decoration: none;
-    transition: 0.2s;
-  }
-  .historia-btn:hover {
-    transform: scale(1.05);
-  }
+    color: #333;
+    font-weight: bold;
+   }
+   a:hover {
+    text-decoration: underline;
+   }
 </style>
 </head>
 <body>
 
   <h1>Bienvenidos a la wiki de Apex Legends</h1>
-  <h2>Selecciona una clase para ver los campeones que la componen</h2>
-
-<div class="roles">
-
- <div class="role-box">
-      <div class="role-title">Asalto</div>
-      <a class="btn btn-class" href="clase/asalto.html">Ver campeones</a>
-      <a class="btn btn-desc" href="roles/asalto.html">Descripción de Asalto</a>
-    </div>
-  
-    <div class="role-box">
-      <div class="role-title">Escaramuza</div>
-      <a class="btn btn-class" href="clase/escaramuza.html">Ver campeones</a>
-      <a class="btn btn-desc" href="roles/escaramuza.html">Descripción de Escaramuza</a>
+  <div class="contenedor">
+    <div class="cuadro">
+      <h2>Descripcion de las Clases</h2>
+      <p>Pulsa para ver la explicacion de las diferentes clases de apex legends</p>
+      <a href="roles/descripciones.html">Ver Clases</a>
     </div>
 
-  <div class="role-box">
-      <div class="role-title">Reconocimiento</div>
-      <a class="btn btn-class" href="clase/reconocimiento.html">Ver campeones</a>
-      <a class="btn btn-desc" href="roles/reconocimiento.html">Descripción de Reconocimiento</a>
+    <div class="cuadro">
+      <h2>Historia del Juego</h2>
+      <p>Informacion sobre el origen del juego, eventos importantes y lore</p>
+      <a href="historia/historia.html">Ver historia →</a>
     </div>
-
-  <div class="role-box">
-      <div class="role-title">Apoyo</div>
-      <a class="btn btn-class" href="clase/apoyo.html">Ver campeones</a>
-      <a class="btn btn-desc" href="roles/apoyo.html">Descripción de Apoyo</a>
-    </div>
-
-
-  <div class="role-box">
-      <div class="role-title">Control</div>
-      <a class="btn btn-class" href="clase/control.html">Ver campeones</a>
-      <a class="btn btn-desc" href="roles/control.html">Descripción de Control</a>
-    </div>
-</div>
- <div class="right-box">
-    <div class="right-title">Descripción de las clases</div>
-     <p style="text-align:center; font-size:18px;">
-      Aquí puedes encontrar las descripciones completas de cada tipo de clase de Apex Legends.
-    </p>
-    
-    <a class="historia-btn" href="historia.html">
-      Historia del juego
-    </a>
-     </div>
 </div>
 </body>
 </html>
