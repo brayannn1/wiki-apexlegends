@@ -2,91 +2,136 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>!Wiki de Apex Legends!</title>
+  <title>Wiki de Apex Legends!</title>
 <style>
 
   body {
     margin: 0;
-    padding: 0;
+    padding: 40;
     background-image: url("img/fondo2.jpg"); 
     background-size: cover;        
     background-position: center;   
     background-repeat: no-repeat;  
-    min-height: 100vh;           
+    min-height: 100vh; 
+    font-family: Arial, sans-serif; 
+    color: white;   
+    text-shadow: 0 0 8px black;
+      
   }
-  h1, h2, ul {
-    color: white;
+  h1 {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 10px;
   }
-    ul.clases {
-    list-style: none;
-    padding: 0;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;      
-    align-items:flex-start;
-    gap: 20px;
-    margin-left: 40px;
+   h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 50px;
   }
-  ul.clases li a {
+   .roles-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+  .role-box {
+    background: rgba(0,0,0,0.65);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    backdrop-filter: blur(3px);
+  }
+  .role-title {
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  .btn {
     display: block;
-    padding: 20px 30px;
-    background: rgba(0, 0, 0, 0.6);  
-    border-radius: 15px;              
+    width: 100%;
+    margin: 10px 0;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
     color: white;
     text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .btn-class {
+    background: #d9534f; 
+  }
+   .btn-class:hover {
+    background: #b0413f;
+  }
+  .btn-desc {
+    background: #4287f5;
+  }
+   .btn-desc:hover {
+    background: #2f64b8;
+  }
+  .historia {
+    margin: 60px auto 0 auto;
+    display: block;
+    width: 300px;
+    text-align: center;
+    padding: 18px;
+    background: white;
+    color: black;
+    border-radius: 12px;
     font-size: 20px;
     font-weight: bold;
-    text-shadow: 0 0 5px black;
-    transition: 0.2s ease-in-out;     
+    text-decoration: none;
+    transition: 0.2s;
   }
-  ul.clases li a:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: scale(1.05);         
+  .historia:hover {
+    transform: scale(1.05);
   }
-
-.btn-rol {
-  padding: 12px 18px;
-  background-color: #4a61dd;
-  border: none;
-  border-radius: 10px;
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.btn-rol:hover {
-  background-color: #364bb0;
-  transform: scale(1.07);
-}
-
 </style>
 </head>
 <body>
 
-  <h1>Bienvenidos a la wiki de campeones de Apex Legends</h1>
+  <h1>Bienvenidos a la wiki de Apex Legends</h1>
   <h2>Selecciona una clase para ver los campeones que la componen</h2>
- <div class="roles-grid">
 
-    <a href="clase/asalto.html"><button class="btn-rol">Asalto</button></a>
-    <a href="roles/asalto.html"><button class="btn-rol">Descripción Asalto</button></a>
+<div class="roles-container">
 
-    <a href="clase/escaramuza.html"><button class="btn-rol">Escaramuza</button></a>
-    <a href="roles/escaramuza.html"><button class="btn-rol">Descripción Escaramuza</button></a>
+ <div class="role-box">
+    <div class="role-title">Asalto</div>
+    <a class="btn btn-class" href="clase/asalto.html">Ver campeones</a>
+    <a class="btn btn-desc" href="roles/asalto.html">Descripción Asalto</a>
+ </div>
 
-    <a href="clase/reconocimiento.html"><button class="btn-rol">Reconocimiento</button></a>
-    <a href="roles/reconocimiento.html"><button class="btn-rol">Descripción Reconocimiento</button></a>
-
-    <a href="clase/apoyo.html"><button class="btn-rol">Apoyo</button></a>
-    <a href="roles/apoyo.html"><button class="btn-rol">Descripción Apoyo</button></a>
-
-    <a href="clase/control.html"><button class="btn-rol">Control</button></a>
-    <a href="roles/control.html"><button class="btn-rol">Descripción Control</button></a>
-
-    <a href="historia.html"><button class="btn-rol">Historia del juego</button></a>
-    <div></div>
-
+  <div class="roles-box">
+    <div class="role-title">Escaramuza</div>
+    <a class="btn btn-class" href="clase/escaramuza.html">Escaramuza</a>
+    <a class="btn btn-desc" href="roles/escaramuza.html">Descripción Escaramuza</a>
   </div>
+
+<div class="role-box">
+  <div class="role-title">Reconocimiento</div>
+    <a class="btn btn-class" href="clase/reconocimiento.html">Reconocimiento</a>
+    <a class="btn btn-desc" href="roles/reconocimiento.html">Descripción Reconocimiento</a>
+</div>
+
+</div class="role-box">
+  <div class="role-title">Apoyo</div>
+    <a class="btn btn-class" href="clase/apoyo.html">Apoyo</a>
+    <a class="btn btn-desc" href="roles/apoyo.html">Descripción Apoyo</a>
+</div>
+
+<div class="role-box">
+  <div class="role-title">Control</div>
+    <a class="btn btn-class" href="clase/control.html">Control</a>
+    <a class="btn btn-desc" href="roles/control.html">Descripción Control</a>
+
+</div>
+</div>
+    <a class="historia" href="historia.html">Historia del juego</a>
+
 </body>
 </html>
