@@ -4,7 +4,9 @@ body {
   background-size: cover;
   background-position: center;
   min-height: 100vh;
+  color: rgb(253, 253, 253);
   font-family: Arial, sans-serif;
+  text-shadow: 0 0 8px black;
   
 }
 .box {
@@ -16,17 +18,20 @@ body {
     margin: 20px;
 }
 h1 {
-  font-size: 50px;
-  margin-top: 0;
+  font-size: 48px;
+  margin-bottom: 10px;
+  text-transform: uppercase
 
 }
 h2 {
   font-size: 32px;
   margin-top: 30px;
+  text-transform: uppercase;
 }
 h3 {
-  font-size: 26px;
+  font-size: 24px;
   margin-top: 20px;
+  text-transform: capitalize;
 }
 p {
   font-size: 20px;
