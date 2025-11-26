@@ -3,59 +3,112 @@
 <head>
   <meta charset="UTF-8">
   <title>Wiki de Apex Legends!</title>
-<style>
-  body {
+  <style>
+    body {
     margin: 0;
     padding: 40px;
+    background-image: url("img/fondo2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #000;
+    color: white;
   }
-   h1 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-weight: bold;
-   }
-   .contenedor {
-    max-width: 900px;
+  .contenedor {
+    max-width: 1000px;
     margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 25px;
-   }
-   .cuadro {
-    background: #fff;
-    padding: 25px;
-    border-radius: 12px;
-    border: 1px solid #ddd;
-   }
-   .cuadro h2 {
-    margin-top: 0;
-   }
-   a {
-    text-decoration: none;
-    color: #333;
+    gap: 35px;
+  }
+  .cuadro {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 25px 35px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.15);
+  }
+  h1 {
+    text-align: center;
+    font-size: 45px;
     font-weight: bold;
-   }
-   a:hover {
-    text-decoration: underline;
-   }
-</style>
+    text-shadow: 0 0 6px black;
+  }
+   h2 {
+    margin-top: 0;
+    font-size: 28px;
+    text-shadow: 0 0 5px black;
+  }
+  ul.clases {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-left: 10px;
+  }
+  ul.clases li a {
+    display: block;
+    padding: 14px 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    width: 260px;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+    transition: 0.2s ease-in-out;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  .asalto a:hover { background: rgba(255, 0, 0, 0.4); }
+  .escaramuza a:hover { background: rgba(208, 211, 16, 0.4); }
+  .reconocimiento a:hover { background: rgba(204, 20, 221, 0.4); }
+  .control a:hover { background: rgba(0, 255, 0, 0.4); }
+  .apoyo a:hover { background: rgba(0, 153, 255, 0.4); }
+
+  .cuadro a {
+    display: inline-block;
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 10px;
+    transition: 0.2s  ease-in-out;
+    border: 1px solid rgba(255,255,255,0.2);
+  }
+  .cuadro a:hover {
+    background: rgba(255,255,255,0.3);
+  }
+  </style>
 </head>
 <body>
-
   <h1>Bienvenidos a la wiki de Apex Legends</h1>
   <div class="contenedor">
+
     <div class="cuadro">
-      <h2>Descripcion de las Clases</h2>
-      <p>Pulsa para ver la explicacion de las diferentes clases de apex legends</p>
-      <a href="roles/descripciones.html">Ver Clases</a>
+      <h2>Clases</h2>
+       <ul class="clases">
+        <li class="asalto"><a href="clase/asalto.html">Asalto</a></li>
+        <li class="escaramuza"><a href="clase/escaramuza.html">Escaramuza</a></li>
+        <li class="reconocimiento"><a href="clase/reconocimiento.html">Reconocimiento</a></li>
+        <li class="control"><a href="clase/control.html">Control</a></li>
+        <li class="apoyo"><a href="clase/apoyo.html">Apoyo</a></li>
+      </ul>
+    </div>
+
+    <div class="cuadro">
+      <h2>Descripción de las Clases</h2>
+      <p>Aquí puedes ver información detallada del rol de cada clase dentro del juego.</p>
+      <a href="roles/descripciones.html">Ver Descripciones →</a>
     </div>
 
     <div class="cuadro">
       <h2>Historia del Juego</h2>
-      <p>Informacion sobre el origen del juego, eventos importantes y lore</p>
-      <a href="historia/historia.html">Ver historia →</a>
+      <p>Descubre el origen del juego, lore, historias y eventos importantes.</p>
+      <a href="historia/historia.html">Ver Historia →</a>
     </div>
 </div>
 </body>
